@@ -30,8 +30,14 @@ public class WeaponController : MonoBehaviour
 
     public void InstantiateBullet()
     {
-        Instantiate(bulletPrefab, shootSpawn.position, shootSpawn.rotation);
+        GameObject newBullet = Instantiate(bulletPrefab, shootSpawn.position, shootSpawn.rotation);
+
+        IShootable shootable = newBullet.GetComponent<IShootable>();
+
+        if (shootable != null)
+        {
+            shootable.Shoot(); 
+        }
     }
-    
 }
 

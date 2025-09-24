@@ -14,6 +14,10 @@ public class BalaController : MonoBehaviour
         bullet = GetComponent<Rigidbody>();
         bullet.linearVelocity = this.transform.forward * power;
     }
+    public void Shoot()
+    {
+        bullet.linearVelocity = transform.forward * power;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
