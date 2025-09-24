@@ -1,5 +1,11 @@
 # Principios-Solid
  
+El proyecto realizado es un intento de Shooter en primera persona
+WASD (caminar)
+Click Izq (disparo)
+Shift Derecho (Correr)
+Espacio(Saltar)
+
 Principio de Responsabilidad Única
 El mini proyecto cuenta con varios scripts:
 -BalaController
